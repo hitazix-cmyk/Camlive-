@@ -8,13 +8,11 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="false"
         android:label="CamLink Live"
-        android:theme="@android:style/Theme.Material.Light.NoActionBar"
-        android:usesCleartextTraffic="false">
+        android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
         <activity
             android:name="ai.camlink.live.MainActivity"
@@ -27,7 +25,6 @@
 
         <service
             android:name="ai.camlink.live.FloatingOverlayService"
-            android:exported="false"
-            android:foregroundServiceType="camera|microphone" />
+            android:exported="false" />
     </application>
 </manifest>
